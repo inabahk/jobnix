@@ -10,7 +10,7 @@ interface Task {
 }
 
 export default function Dashboard() {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState<any>(null)
   const [tasks, setTasks] = useState<Task[]>([])
   const [newTask, setNewTask] = useState('')
   const [category, setCategory] = useState('learning')
